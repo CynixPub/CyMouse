@@ -27,9 +27,9 @@
 - **DPI 快速切换**：底部有独立的 DPI 切换按钮，方便快速调整。
 
 <p align="center">
-  <a href="./assets/实物1.jpg" target="_blank"><img src="./assets/实物1.jpg" width="300" alt="实物图1"></a>
-  <a href="./assets/实物2.jpg" target="_blank"><img src="./assets/实物2.jpg" width="300" alt="实物图2"></a>
-  <a href="./assets/实物3.jpg" target="_blank"><img src="./assets/实物3.jpg" width="300" alt="实物图3"></a>
+  <a href="./assets/实物1.jpg" target="_blank"><img src="./assets/实物1.jpg" width="250" alt="实物图1"></a>
+  <a href="./assets/实物2.jpg" target="_blank"><img src="./assets/实物2.jpg" width="250" alt="实物图2"></a>
+  <a href="./assets/实物3.jpg" target="_blank"><img src="./assets/实物3.jpg" width="250" alt="实物图3"></a>
 </p>
 
 #### 性能数据
