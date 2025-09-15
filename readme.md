@@ -53,7 +53,8 @@
 
 - **鼠标重量**：鼠标本体重量约83g，包含电池约110.4g
 
-<img src="assets/with_bt.jpg" width=250/>	<img src="assets/with_out_bt.jpg" alt="with_out_bt" width=250/>
+<img src="assets/with_bt.jpg" width=250/>    <img src="assets/with_out_bt.jpg" alt="with_out_bt" width=250/>
+
 
 
 
@@ -61,8 +62,13 @@
 - **多维度数据**：支持血氧、心率、疲劳指数、微循环、血压、心输出、外周阻力等健康数据的监测。
 
 - **智能提醒**：通过振动方式进行久坐提醒。
+<p align="center">
+<img src="assets/体检.jpg" width=250 />  <img src="assets/休息.jpg" width=250/>
+</p>
+注：当前灯光效果是随机，不是固定颜色
 
-  <img src=".\assets\体检.jpg" width=250 />
+
+
 
 
 
