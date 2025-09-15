@@ -1,53 +1,73 @@
 # CyMouse: 一款支持健康监测的高性能鼠标
 
 <p align="center">
-  <a href="./assets/view2.png" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/view2.png" width="600" alt="CyMouse 效果图">
+  <a href="./assets/view2.png" target="_blank">
+    <img src="./assets/view2.png" width="1000" alt="CyMouse 效果图">
   </a>
 </p>
 
-CyMouse 是一款支持健康监测的高性能鼠标。主控采用 **ESP32-S3FH4R2**，传感器为 **PAW3395DM-T6QU**，集成了血氧、心率传感器，并且配置了一个小屏幕用于查看鼠标的相关状态和进行功能配置。
+
+​	CyMouse 是一款支持健康监测的高性能鼠标。主控采用 **ESP32-S3FH4R2**，传感器为 **PAW3395DM-T6QU**，集成了血氧、心率传感器，并且配置了屏幕用于查看鼠标的相关状态和进行功能配置。
 
 ## ✨ 背景
 
-由于我的工作性质，每天都需要长时间久坐，这让我开始思考：有没有一款产品可以在无感知的情况下监控我们的健康状态？
+​	由于我的工作性质，每天都需要长时间久坐，这让我开始思考：有没有一款产品可以在无感知的情况下监控我们的健康状态？
 
 目前市面上的健康监控产品主要是手环和手表，但我个人不喜欢在工作时佩戴它们，因为手腕上的设备总是会与键盘发生磕碰。健康监测模块要求与身体紧密接触，最常见的部位是手指或手腕。在工作场景中，我们接触时间最长的外设无疑是鼠标。
 
 于是，将健康监测功能集成到鼠标中的想法便诞生了，这就是 CyMouse 项目的由来。
+
+
 
 ## 🚀 主要功能
 
 ### 🖱️ 鼠标功能
 - **三模连接**：支持蓝牙、2.4G 无线、USB-C 有线三种连接方式。
 - **高性能传感器**：采用 PAW3395DM-T6QU 传感器，最高支持 26000 DPI。
-- **DPI 快速切换**：配备独立的 DPI 切换按钮，方便快速调整。
+- **DPI 快速切换**：底部有独立的 DPI 切换按钮，方便快速调整。
 
 <p align="center">
-  <a href="./assets/实物1.jpg" target="_blank" rel="noopener noreferrer"><img src="./assets/实物1.jpg" width="250" alt="实物图1"></a>
-  <a href="./assets/实物2.jpg" target="_blank" rel="noopener noreferrer"><img src="./assets/实物2.jpg" width="250" alt="实物图2"></a>
-  <a href="./assets/实物3.jpg" target="_blank" rel="noopener noreferrer"><img src="./assets/实物3.jpg" width="250" alt="实物图3"></a>
+  <a href="./assets/实物1.jpg" target="_blank"><img src="./assets/实物1.jpg" width="350" alt="实物图1"></a>
+  <a href="./assets/实物2.jpg" target="_blank"><img src="./assets/实物2.jpg" width="350" alt="实物图2"></a>
+  <a href="./assets/实物3.jpg" target="_blank"><img src="./assets/实物3.jpg" width="350" alt="实物图3"></a>
 </p>
 
 #### 性能数据
 - **USB / 无线模式**：由于 ESP32-S3 的 USB Full-Speed (12 Mbit/s) 限制，回报率最高为 1KHz。虽然这未能完全发挥 PAW3395DM-T6QU 的全部性能，但实际使用体验比我的罗技 G102 更加丝滑、精准。对于办公和各类游戏（包括 FPS）已完全足够。
+
+  <img src=".\assets\usb_test\polling_rate.png" alt="polling_rate" width=350/>. <img src=".\assets\usb_test\interval_vs_Time.png" width=350/> .  <img src=".\assets\usb_test\x_vs_y.png" alt="x_vs_y" width=350/>
+  <img src=".\assets\usb_test\xCount_vs_Time.png" alt="xCount_vs_Time" width=350/>.  <img src=".\assets\usb_test\xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=350/>. <img src=".\assets\usb_test\xyCount_vs_Time.png" alt="xyCount_vs_Time" width=350 />
+  <img src=".\assets\usb_test\xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=350/>.  <img src=".\assets\usb_test\yCount_vs_Time.png" alt="yCount_vs_Time" width=350 />. <img src=".\assets\usb_test\ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=350/>
+
+
+
+
 - **蓝牙模式**：受限于 BLE 协议，性能上与有线和无线模式有一定差距，但完全满足办公等低性能要求的场景。
 
-<p align="center">
-  <a href="path/to/your/usb_perf_image.jpg" target="_blank"><img src="path/to/your/usb_perf_image.jpg" width="250" alt="USB模式性能图"></a>
-  <a href="path/to/your/wireless_perf_image.jpg" target="_blank"><img src="path/to/your/wireless_perf_image.jpg" width="250" alt="无线模式性能图"></a>
-  <a href="path/to/your/bt_perf_image.jpg" target="_blank"><img src="path/to/your/bt_perf_image.jpg" width="250" alt="蓝牙模式性能图"></a>
-</p>
+  <img src="assets/ble_test/polling_rate.png" width=350/><img src="assets/ble_test/interval_vs_Time.png" width=350/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=350/>
+
+<img src="assets/ble_test/xCount_vs_Time.png" alt="xCount_vs_Time" width=350/><img src="assets/ble_test/xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=350/><img src="assets/ble_test/xyCount_vs_Time.png" alt="xyCount_vs_Time" width=350/>
+
+<img src="assets/ble_test/xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=350/><img src="assets/ble_test/yCount_vs_Time.png" alt="yCount_vs_Time" width=350/><img src="assets/ble_test/ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=350/>
+
+
+
+
+- **鼠标重量**：鼠标本体重量约83g，包含电池约110.4g
+
+<img src="assets/with_bt.jpg" width=250/>	<img src="assets/with_out_bt.jpg" alt="with_out_bt" width=250/>
+
+
 
 ### ❤️ 健康监测
 - **多维度数据**：支持血氧、心率、疲劳指数、微循环、血压、心输出、外周阻力等健康数据的监测。
+
 - **智能提醒**：通过振动方式进行久坐提醒。
 
-<p align="center">
-  <a href="path/to/your/health_monitor_image.jpg" target="_blank">
-    <img src="path/to/your/health_monitor_image.jpg" width="400" alt="健康监测界面">
-  </a>
-</p>
+  <img src=".\assets\体检.jpg" width=250 />
+
+
+
 
 
 ### 💡 其他功能
