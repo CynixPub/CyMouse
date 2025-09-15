@@ -35,20 +35,18 @@
 #### 性能数据
 - **USB / 无线模式**：由于 ESP32-S3 的 USB Full-Speed (12 Mbit/s) 限制，回报率最高为 1KHz。虽然这未能完全发挥 PAW3395DM-T6QU 的全部性能，但实际使用体验比我的罗技 G102 更加丝滑、精准。对于办公和各类游戏（包括 FPS）已完全足够。
 
-  <img src=".\assets\usb_test\polling_rate.png" alt="polling_rate" width=350/>. <img src=".\assets\usb_test\interval_vs_Time.png" width=350/> .  <img src=".\assets\usb_test\x_vs_y.png" alt="x_vs_y" width=350/>
-  <img src=".\assets\usb_test\xCount_vs_Time.png" alt="xCount_vs_Time" width=350/>.  <img src=".\assets\usb_test\xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=350/>. <img src=".\assets\usb_test\xyCount_vs_Time.png" alt="xyCount_vs_Time" width=350 />
-  <img src=".\assets\usb_test\xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=350/>.  <img src=".\assets\usb_test\yCount_vs_Time.png" alt="yCount_vs_Time" width=350 />. <img src=".\assets\usb_test\ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=350/>
+  <img src=".\assets\usb_test\polling_rate.png" alt="polling_rate" width=250/>. <img src=".\assets\usb_test\interval_vs_Time.png" width=250/> .  <img src=".\assets\usb_test\x_vs_y.png" alt="x_vs_y" width=250/>
+  <img src=".\assets\usb_test\xCount_vs_Time.png" alt="xCount_vs_Time" width=250/>.  <img src=".\assets\usb_test\xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=250/>. <img src=".\assets\usb_test\xyCount_vs_Time.png" alt="xyCount_vs_Time" width=250 />
+  <img src=".\assets\usb_test\xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=250/>.  <img src=".\assets\usb_test\yCount_vs_Time.png" alt="yCount_vs_Time" width=250 />. <img src=".\assets\usb_test\ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=250/>
 
 
 
 
 - **蓝牙模式**：受限于 BLE 协议，性能上与有线和无线模式有一定差距，但完全满足办公等低性能要求的场景。
 
-  <img src="assets/ble_test/polling_rate.png" width=350/><img src="assets/ble_test/interval_vs_Time.png" width=350/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=350/>
-
-<img src="assets/ble_test/xCount_vs_Time.png" alt="xCount_vs_Time" width=350/><img src="assets/ble_test/xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=350/><img src="assets/ble_test/xyCount_vs_Time.png" alt="xyCount_vs_Time" width=350/>
-
-<img src="assets/ble_test/xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=350/><img src="assets/ble_test/yCount_vs_Time.png" alt="yCount_vs_Time" width=350/><img src="assets/ble_test/ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=350/>
+  <img src="assets/ble_test/polling_rate.png" width=250/><img src="assets/ble_test/interval_vs_Time.png" width=250/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=250/>
+<img src="assets/ble_test/xCount_vs_Time.png" alt="xCount_vs_Time" width=250/><img src="assets/ble_test/xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=250/><img src="assets/ble_test/xyCount_vs_Time.png" alt="xyCount_vs_Time" width=250/>
+<img src="assets/ble_test/xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=250/><img src="assets/ble_test/yCount_vs_Time.png" alt="yCount_vs_Time" width=250/><img src="assets/ble_test/ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=250/>
 
 
 
