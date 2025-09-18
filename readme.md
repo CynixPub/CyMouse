@@ -65,7 +65,7 @@
 <p align="center">
 <img src="assets/体检.jpg" width=250 />  <img src="assets/休息.jpg" width=250/>
 </p>
-注：当前灯光效果是随机，不是固定颜色
+注：当前灯光效果为随机色
 
 
 
@@ -74,15 +74,15 @@
 
 
 
-### 💡 其他功能
-- **个性化配置**：支持可配置的屏幕动画和 LED 灯效。
-- **数据统计**：内置鼠标使用数据统计功能。
-- **多语言**：支持中文和英文双语界面。
+### 💡 更多功能
+- **可以鼠标DPI、滚轮速度等**
+- **可以设置鼠标运动时的屏幕动画**
+- **可以设置RGB灯效**
+- **可以查看记录的健康和鼠标数据**
+- **支持多语言等**
 
 <p align="center">
-  <a href="path/to/your/other_features_image.jpg" target="_blank">
-    <img src="path/to/your/other_features_image.jpg" width="400" alt="其他功能界面">
-  </a>
+<img src="assets/设置1.jpg" width=250 />  <img src="assets/设置2.jpg" width=250/>
 </p>
 
 ### 💻 PC 客户端
@@ -113,11 +113,11 @@
 - **传感器**: PAW3395DM-T6QU，需配套镜头型号 `LM19-LSI`。
 - **血氧模块**: 我选择了一款支持血压检测的特殊模块。套件自带 6pin 连接线，3D 模型也基于此模块尺寸设计。
 - **屏幕**: 0.49寸 OLED，`64*48` 分辨率，`16PIN` 接口。**注意**：务必购买与下图接口一致的屏幕。
-    <a href="path/to/your/screen_pinout_image.jpg" target="_blank"><img src="path/to/your/screen_pinout_image.jpg" width="200" alt="屏幕接口示意图"></a>
+<img src="assets/OLED.jpg" width=250/>    <img src="assets/OLED_PIN.png" alt="with_out_bt" width=250/>
 - **电池**: 型号 `103443-1500mAh` (尺寸: 10x34x43mm)。充满电可连续使用约 48 小时。可根据个人对重量和续航的平衡进行选择。如果只使用 USB 模式，可以不安装电池。
-- **电池连接线**: `2P 1.25mm` 间距，公头 (单头)，线长 `100mm`。
+- **电池连接线**: `2P 1.25mm` 间距，公头 (单头)，线长 `50mm`。
 - **USB 线**: 推荐购买细软的 USB 2.0 Type-C 数据线以获得更好的有线模式体验。
-- **微动**: TTC 防尘金微动 (0.65N 软脆手感)，或任何尺寸兼容的微动。
+- **微动**: TTC 防尘金微动 (0.65N 软脆手感)，或任何尺寸兼容的微动。 z
 - **编码器**: TTC 防尘金轮编码器，高度 `12MM`。
 - **中键**: 凯华静音微动，高度 `9.5mm`。
 - **滚轮**: 罗技 G102 / G304 / G305 通用滚轮。
@@ -133,9 +133,10 @@
 ### 焊接与组装说明
 
 - **芯片方向**: `TPS61222DCKR` 和两颗 `TPS22919QDCKRQ1` 这三颗芯片容易焊错方向。芯片上的**竖线标记**必须与 PCB 丝印的**定位标记**保持一致。
-- **接线座方向**: 4PIN 和 6PIN 接线座的方向不要装反，请参考下图。
-    <a href="path/to/your/connector_direction_image.jpg" target="_blank"><img src="path/to/your/connector_direction_image.jpg" width="300" alt="接线座方向示意图"></a>
-- **血氧模块 FPC**: 用于连接血氧模块的 6PIN FPC 线方向**必须**与图中一致，否则会烧毁模块！
+- **接线座方向**: 4PIN 和 6PIN 接线座的方向不要装反，请参考下图
+<img src="assets/3d_board.png" width=450/> 
+- **血氧模块 FPC**: 用于连接血氧模块的 6PIN FPC 线方向**必须**与图中一致（注意FPC金属面的朝向），否则会烧毁模块！
+- <img src="assets/血氧传感器.jpg" width=250/> 
 
 ### 核心电路设计思路
 
