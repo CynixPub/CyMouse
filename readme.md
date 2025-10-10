@@ -46,7 +46,7 @@
 
 - **鼠标重量**：鼠标本体重量约83g，包含电池约110.4g
 
-<img src="assets/with_bt.jpg" width=250/>    <img src="assets/with_out_bt.jpg" alt="with_out_bt" width=250/>
+  <img src="assets/with_bt.jpg" width=250/>    <img src="assets/with_out_bt.jpg" alt="with_out_bt" width=250/>
 
 
 
@@ -56,7 +56,7 @@
 
 - **智能提醒**：通过振动方式进行久坐提醒。
 
-<img src="assets/体检.jpg" width=250 />  <img src="assets/休息.jpg" width=250/>
+  <img src="assets/体检.jpg" width=250 />  <img src="assets/休息.jpg" width=250/>
 
 
 注：当前灯光效果为随机色
@@ -72,7 +72,7 @@
 - **支持多语言等**
 
 
-<img src="assets/设置1.jpg" width=250 />  <img src="assets/设置2.jpg" width=250/>
+  <img src="assets/设置1.jpg" width=250 />  <img src="assets/设置2.jpg" width=250/>
 
 
 ### 💻 PC 客户端
@@ -82,7 +82,7 @@
 - 查看鼠标使用数据统计。
 
 
-<img src="assets/pc1.png" width=300 />  <img src="assets/pc2.png" width=300/>
+  <img src="assets/pc1.png" width=300 />  <img src="assets/pc2.png" width=300/>
 
 
 
@@ -99,7 +99,7 @@
 - **传感器**: PAW3395DM-T6QU，需配套镜头型号 `LM19-LSI`。
 - **血氧模块**: 我选择了一款支持血压检测的特殊模块。套件自带 6pin 连接线，3D 模型也基于此模块尺寸设计。
 - **屏幕**: 0.49寸 OLED，`64*48` 分辨率，`16PIN` 接口。**注意**：务必购买与下图接口一致的屏幕。
-<img src="assets/OLED.jpg" width=250/>    <img src="assets/OLED_PIN.png" alt="with_out_bt" width=250/>
+  <img src="assets/OLED.jpg" width=250/>    <img src="assets/OLED_PIN.png" alt="with_out_bt" width=250/>
 - **电池**: 型号 `103443-1500mAh` (尺寸: 10x34x43mm)。充满电可连续使用约 48 小时。可根据个人对重量和续航的平衡进行选择。如果只使用 USB 模式，可以不安装电池。
 - **电池连接线**: `2P 1.25mm` 间距，公头 (单头)，线长 `50mm`。
 - **USB 线**: 推荐购买细软的 USB 2.0 Type-C 数据线以获得更好的有线模式体验。
@@ -120,9 +120,9 @@
 
 - **芯片方向**: `TPS61222DCKR` 和两颗 `TPS22919QDCKRQ1` 这三颗芯片容易焊错方向。芯片上的**竖线标记**必须与 PCB 丝印的**定位标记**保持一致。
 - **接线座方向**: 4PIN 和 6PIN 接线座的方向不要装反，请参考下图
-<img src="assets/3d_board.png" width=450/> 
+  <img src="assets/3d_board.png" width=450/> 
 - **血氧模块 FPC**: 用于连接血氧模块的 6PIN FPC 线方向**必须**与图中一致（注意FPC金属面的朝向），否则会烧毁模块！
-- <img src="assets/血氧传感器.jpg" width=250/> 
+  <img src="assets/血氧传感器.jpg" width=250/> 
 
 ### 核心电路设计思路
 
@@ -138,7 +138,7 @@
 - **推荐材料**: 半透明的 PETG 材料，配合 LED 灯光能获得不错的视觉效果。
 
 
-<img src="assets/3d_model.png" width=800/>
+  <img src="assets/3d_model.png" width=800/>
 
 
 注意：图中3处是我在建模时增加的支撑，打印出来后抠掉即可。
@@ -166,7 +166,7 @@
 - **进入设置**: 同时长按**两个侧键** 3 秒，即可进入鼠标设置菜单。
 
 
-<img src="assets/enter_config.png" width=800/>
+  <img src="assets/enter_config.png" width=800/>
 
 
 
@@ -215,14 +215,14 @@ https://github.com/kirltrz/PAW3395_Arduino_ESP32
 硬件开发确实不易，一路走来踩了不少坑，还有3D模型的试错也颇费心血。
 
 
-<img src="assets/more2.jpg" width=800/>
+  <img src="assets/more2.jpg" width=800/>
 
 ---
 
 ## ❤️ 捐赠
 如果您觉得 CyMouse 对您有帮助，欢迎给予我一些支持，这将帮助我更好地完善这个项目。
 
-<img src="assets/wx21.png" width=150/>
+  <img src="assets/wx21.png" width=150/>
 
 
 
