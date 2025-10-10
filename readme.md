@@ -181,6 +181,10 @@
 ## 📜 开源与隐私
 
 - **开源范围**: 本项目的**硬件 (PCB)**、**3D 模型**、**无线接收端固件**和 **PC 客户端**均完全开源。
+  - 硬件开源地址：https://oshwhub.com/keivenliao/cymouse
+  - 接收端开源地址：https://github.com/CynixPub/CyMouse_Receiver
+  - PC端开源地址：https://github.com/CynixPub/PC_monitor
+
 - **用户隐私**: 鼠标本体固件没有任何联网逻辑，完全离线运行。PC 客户端记录的健康数据也完全存储在本地，代码开源可查。
 
 ---
