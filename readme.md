@@ -1,10 +1,6 @@
 # CyMouse: 一款支持健康监测的高性能鼠标
 
-<p align="center">
-  <a href="./assets/view2.png" target="_blank">
-    <img src="./assets/view2.png" width="1000" alt="CyMouse 效果图">
-  </a>
-</p>
+<img src="./assets/view2.png" width="1000" alt="CyMouse 效果图">
 
 
 ​	CyMouse 是一款支持健康监测的高性能鼠标。主控采用 **ESP32-S3FH4R2**，传感器为 **PAW3395DM-T6QU**，集成了血氧、心率传感器，并且配置了屏幕用于查看鼠标的相关状态和进行功能配置。
@@ -26,11 +22,8 @@
 - **高性能传感器**：采用 PAW3395DM-T6QU 传感器，最高支持 26000 DPI。
 - **DPI 快速切换**：底部有独立的 DPI 切换按钮，方便快速调整。
 
-<p align="center">
-  <a href="./assets/实物1.jpg" target="_blank"><img src="./assets/实物1.jpg" width="250" alt="实物图1"></a>
-  <a href="./assets/实物2.jpg" target="_blank"><img src="./assets/实物2.jpg" width="250" alt="实物图2"></a>
-  <a href="./assets/实物3.jpg" target="_blank"><img src="./assets/实物3.jpg" width="250" alt="实物图3"></a>
-</p>
+  <img src="./assets/实物1.jpg" width="250" alt="实物图1">  <img src="./assets/实物2.jpg" width="250" alt="实物图2">   <img src="./assets/实物3.jpg" width="250" alt="实物图3">
+
 
 #### 性能数据
 - **USB / 无线模式**：由于 ESP32-S3 的 USB Full-Speed (12 Mbit/s) 限制，回报率最高为 1KHz。虽然这未能完全发挥 PAW3395DM-T6QU 的全部性能，但实际使用体验比我的罗技 G102 更加丝滑、精准。对于办公和各类游戏（包括 FPS）已完全足够。
@@ -44,7 +37,7 @@
 
 - **蓝牙模式**：受限于 BLE 协议，性能上与有线和无线模式有一定差距，但完全满足办公等低性能要求的场景。
 
-  <img src="assets/ble_test/polling_rate.png" width=250/><img src="assets/ble_test/interval_vs_Time.png" width=250/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=250/>
+<img src="assets/ble_test/polling_rate.png" width=250/><img src="assets/ble_test/interval_vs_Time.png" width=250/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=250/>
 <img src="assets/ble_test/xCount_vs_Time.png" alt="xCount_vs_Time" width=250/><img src="assets/ble_test/xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=250/><img src="assets/ble_test/xyCount_vs_Time.png" alt="xyCount_vs_Time" width=250/>
 <img src="assets/ble_test/xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=250/><img src="assets/ble_test/yCount_vs_Time.png" alt="yCount_vs_Time" width=250/><img src="assets/ble_test/ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=250/>
 
@@ -62,14 +55,9 @@
 - **多维度数据**：支持血氧、心率、疲劳指数、微循环、血压、心输出、外周阻力等健康数据的监测。
 
 - **智能提醒**：通过振动方式进行久坐提醒。
-<p align="center">
 <img src="assets/体检.jpg" width=250 />  <img src="assets/休息.jpg" width=250/>
-</p>
+
 注：当前灯光效果为随机色
-
-
-
-
 
 
 
@@ -81,9 +69,9 @@
 - **可以查看记录的健康和鼠标数据**
 - **支持多语言等**
 
-<p align="center">
+
 <img src="assets/设置1.jpg" width=250 />  <img src="assets/设置2.jpg" width=250/>
-</p>
+
 
 ### 💻 PC 客户端
 在 USB 模式下，可以通过 PC 客户端：
@@ -91,14 +79,10 @@
 - 主动发起一次健康监测。
 - 查看鼠标使用数据统计。
 
-<p align="center">
-  <a href="path/to/your/pc_client_image.jpg" target="_blank">
-    <img src="path/to/your/pc_client_image.jpg" width="500" alt="PC客户端截图">
-  </a>
-</p>
 
-### 🔋 未验证功能
-硬件上已设计并支持无线充电功能，外壳建模也为无线接收模块预留了空间，相关电路和 PCB 均已完成设计，但暂未进行实际验证。您可以持续关注本项目的后续进展。
+<img src="assets/pc1.png" width=300 />  <img src="assets/pc2.png" width=300/>
+
+
 
 ---
 
@@ -107,7 +91,7 @@
 硬件资源是开源的，您可以在以下地址找到相关文件：
 - **开源地址**: `(请在这里替换为您的开源项目链接)`
 
-### 采购清单 (BOM)
+### 采购清单注意事项
 大部分元器件可在立创商城采购，如遇缺货可在其他渠道购买。以下是需要单独购买的特殊配件：
 
 - **传感器**: PAW3395DM-T6QU，需配套镜头型号 `LM19-LSI`。
@@ -117,7 +101,7 @@
 - **电池**: 型号 `103443-1500mAh` (尺寸: 10x34x43mm)。充满电可连续使用约 48 小时。可根据个人对重量和续航的平衡进行选择。如果只使用 USB 模式，可以不安装电池。
 - **电池连接线**: `2P 1.25mm` 间距，公头 (单头)，线长 `50mm`。
 - **USB 线**: 推荐购买细软的 USB 2.0 Type-C 数据线以获得更好的有线模式体验。
-- **微动**: TTC 防尘金微动 (0.65N 软脆手感)，或任何尺寸兼容的微动。 z
+- **微动**: TTC 防尘金微动 (0.65N 软脆手感)，或任何尺寸兼容的微动。 
 - **编码器**: TTC 防尘金轮编码器，高度 `12MM`。
 - **中键**: 凯华静音微动，高度 `9.5mm`。
 - **滚轮**: 罗技 G102 / G304 / G305 通用滚轮。
@@ -151,13 +135,15 @@
 - **打印后调整**: 打印完成后，左右按键的触杆长度可能需要根据实际装配情况进行微调。
 - **推荐材料**: 半透明的 PETG 材料，配合 LED 灯光能获得不错的视觉效果。
 
-<p align="center">
-  <a href="path/to/your/3d_model_image.jpg" target="_blank">
-    <img src="path/to/your/3d_model_image.jpg" width="500" alt="3D模型预览">
-  </a>
-</p>
+
+<img src="assets/3d_model.png" width=800/>
+
+
+注意：图中3处是我在建模时增加的支撑，打印出来后抠掉即可。
 
 ---
+
+
 
 ## 💾 固件烧录与使用
 
@@ -176,43 +162,52 @@
 ### 使用说明
 - **进入设置**: 同时长按**两个侧键** 3 秒，即可进入鼠标设置菜单。
 
-<p align="center">
-  <a href="path/to/your/settings_menu_image.jpg" target="_blank">
-    <img src="path/to/your/settings_menu_image.jpg" width="300" alt="设置菜单">
-  </a>
-</p>
+
+<img src="assets/enter_config.png" width=800/>
+
+
 
 ---
+
+### 🔋 未验证功能
+硬件上已设计并支持无线充电功能，外壳建模也为无线接收模块预留了空间，相关电路和 PCB 均已完成设计，但暂未进行实际验证。您可以持续关注本项目的后续进展。
+
+---
+
 
 ## 📜 开源与隐私
 
 - **开源范围**: 本项目的**硬件 (PCB)**、**3D 模型**、**无线接收端固件**和 **PC 客户端**均完全开源。
-- **开源地址**: `(请在这里替换为您的开源项目链接)`
 - **用户隐私**: 鼠标本体固件没有任何联网逻辑，完全离线运行。PC 客户端记录的健康数据也完全存储在本地，代码开源可查。
 
 ---
 
+
+
+## 🙏感谢
+
+以下三个项目：
+https://github.com/Ghost-Girls/PMW3360-3389-PAW3395_STM32-CH32-APM32
+https://github.com/Li-Dongze/stm32_paw3395_mouse
+https://github.com/kirltrz/PAW3395_Arduino_ESP32
+
+---
+
+
+
 ## ✍️ 写在最后
 
-### 一点想法
 从技术上讲，PC 客户端完全可以实现对鼠标所有功能的配置。但这与我设计初衷——即在鼠标上通过屏幕直接完成所有配置——相冲突。因此，我仅在 PC 端实现了健康监测相关的部分功能。（当然，懒也是其中一个原因 😄）
 
-### 一点感慨
-(在这里写下您对国内硬件生态、AI 在项目中作用等的感想)
+**部分“祭品”**
+硬件开发确实不易，一路走来踩了不少坑，还有3D模型的试错也颇费心血。
 
-### 部分“祭品”
-硬件开发确实不易，一路走来，也踩了不少坑。
-<p align="center">
-  <a href="path/to/your/failed_pcbs_image.jpg" target="_blank">
-    <img src="path/to/your/failed_pcbs_image.jpg" width="400" alt="一些废弃的PCB板">
-  </a>
-</p>
+
+<img src="assets/more2.jpg" width=800/>
+
+---
 
 ## ❤️ 捐赠
-如果您觉得 CyMouse 对您有帮助，欢迎给予我们一些支持，这将帮助我们更好地发展这个项目。
+如果您觉得 CyMouse 对您有帮助，欢迎给予我一些支持，这将帮助我更好地完善这个项目。
 
-<p align="center">
-  <a href="path/to/your/donation_qr_image.jpg" target="_blank">
-    <img src="path/to/your/donation_qr_image.jpg" width="200" alt="捐赠二维码">
-  </a>
-</p>
+<img src="assets/wx21.png" width=150/>
