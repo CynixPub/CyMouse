@@ -18,7 +18,7 @@
 ## 🚀 主要功能
 
 ### 🖱️ 鼠标功能
-- **三模连接**：支持蓝牙、2.4G 无线、USB-C 有线三种连接方式。
+- **三模连接**：USB-C 有线、支持蓝牙、2.4G 无线（随便找个esp32s3开发板N4即可，刷入接收端固件）、三种连接方式。
 - **高性能传感器**：采用 PAW3395DM-T6QU 传感器，最高支持 26000 DPI。
 - **DPI 快速切换**：底部有独立的 DPI 切换按钮，方便快速调整。
 
@@ -35,7 +35,7 @@
 
 
 
-- **蓝牙模式**：受限于 BLE 协议，性能上与有线和无线模式有一定差距，但完全满足办公等低性能要求的场景。
+- **蓝牙模式**：受限于 BLE 协议，性能上与有线和无线模式有一定差距，但完全满足办公等场景。
 
 <img src="assets/ble_test/polling_rate.png" width=250/><img src="assets/ble_test/interval_vs_Time.png" width=250/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=250/>
 <img src="assets/ble_test/xCount_vs_Time.png" alt="xCount_vs_Time" width=250/><img src="assets/ble_test/xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=250/><img src="assets/ble_test/xyCount_vs_Time.png" alt="xyCount_vs_Time" width=250/>
