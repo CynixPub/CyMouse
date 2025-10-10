@@ -185,7 +185,8 @@
   - 接收端开源地址：https://github.com/CynixPub/CyMouse_Receiver
   - PC端开源地址：https://github.com/CynixPub/PC_monitor
 
-- **用户隐私**: 鼠标本体固件没有任何联网逻辑，完全离线运行。PC 客户端记录的健康数据也完全存储在本地，代码开源可查。
+- **用户隐私**：鼠标本体固件没有任何联网逻辑，完全离线运行。PC 客户端记录的健康数据也完全存储在本地，代码开源可查。
+- **开源协议**：开源内容均遵循CC BY-NC-SA 4.0   /  GPLv3 协议。
 
 ---
 
@@ -222,3 +223,6 @@ https://github.com/kirltrz/PAW3395_Arduino_ESP32
 如果您觉得 CyMouse 对您有帮助，欢迎给予我一些支持，这将帮助我更好地完善这个项目。
 
 <img src="assets/wx21.png" width=150/>
+
+
+

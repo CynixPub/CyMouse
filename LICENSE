@@ -1,0 +1,76 @@
+===============================================================================
+Project License Notice
+===============================================================================
+
+This project contains both hardware design files and software source code.
+Each part is licensed under separate, compatible open licenses as described below.
+
+-------------------------------------------------------------------------------
+1. Hardware License
+-------------------------------------------------------------------------------
+
+The hardware design files in this repository — including but not limited to:
+- Schematics (.sch)
+- PCB layouts (.pcb / .kicad_pcb / .brd)
+- Mechanical designs (.stl / .step / .dxf)
+- Documentation, images, and diagrams
+
+are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format.
+- Adapt — remix, transform, and build upon the material.
+
+Under the following terms:
+- **Attribution (BY)** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **NonCommercial (NC)** — You may not use the material for commercial purposes.
+- **ShareAlike (SA)** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+
+License text: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+-------------------------------------------------------------------------------
+2. Software License
+-------------------------------------------------------------------------------
+
+The software source code in this repository — including but not limited to:
+- Firmware source files (.c, .cpp, .h)
+- Build scripts, libraries, and configuration files
+- Host-side utilities and examples
+
+is licensed under the **GNU General Public License, Version 3 (GPLv3)**.
+
+You are free to:
+- Use, modify, and distribute the software under the terms of the GPLv3.
+- Use it commercially, provided that all distributed or derivative versions
+  also remain licensed under the GPLv3, and the corresponding source code is made available.
+
+License text: https://www.gnu.org/licenses/gpl-3.0.html
+
+-------------------------------------------------------------------------------
+3. Combined Usage Notice
+-------------------------------------------------------------------------------
+
+The hardware and software are separate creative works with distinct licenses.
+
+- You may combine them (e.g., run GPLv3 software on CC BY-NC-SA hardware),
+  provided that you respect **each license’s own terms**.
+
+- Commercial use of the **hardware design files** is prohibited by the
+  CC BY-NC-SA 4.0 license, even if the software is under GPLv3.
+
+- Redistribution of the combined system must clearly preserve the original
+  license notices and attribution for both hardware and software components.
+
+-------------------------------------------------------------------------------
+4. Copyright Notice
+-------------------------------------------------------------------------------
+
+Copyright © 2025 [Your Name or Organization]
+
+Hardware: Licensed under CC BY-NC-SA 4.0  
+Software: Licensed under GNU GPLv3
+
+-------------------------------------------------------------------------------
+For clarity, please include this file with any redistribution or derivative works.
+-------------------------------------------------------------------------------
+
