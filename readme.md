@@ -37,9 +37,9 @@
 
 - **蓝牙模式**：受限于 BLE 协议，性能上与有线和无线模式有一定差距，但完全满足办公等场景。
 
-<img src="assets/ble_test/polling_rate.png" width=250/><img src="assets/ble_test/interval_vs_Time.png" width=250/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=250/>
-<img src="assets/ble_test/xCount_vs_Time.png" alt="xCount_vs_Time" width=250/><img src="assets/ble_test/xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=250/><img src="assets/ble_test/xyCount_vs_Time.png" alt="xyCount_vs_Time" width=250/>
-<img src="assets/ble_test/xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=250/><img src="assets/ble_test/yCount_vs_Time.png" alt="yCount_vs_Time" width=250/><img src="assets/ble_test/ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=250/>
+  <img src="assets/ble_test/polling_rate.png" width=250/><img src="assets/ble_test/interval_vs_Time.png" width=250/><img src="assets/ble_test/x_vs_y.png" alt="x_vs_y" width=250/>
+  <img src="assets/ble_test/xCount_vs_Time.png" alt="xCount_vs_Time" width=250/><img src="assets/ble_test/xSpeed_vs_Time.png" alt="xSpeed_vs_Time" width=250/><img src="assets/ble_test/xyCount_vs_Time.png" alt="xyCount_vs_Time" width=250/>
+  <img src="assets/ble_test/xySpeed_vs_Time.png" alt="xySpeed_vs_Time" width=250/><img src="assets/ble_test/yCount_vs_Time.png" alt="yCount_vs_Time" width=250/><img src="assets/ble_test/ySpeed_vs_Time.png" alt="ySpeed_vs_Time" width=250/>
 
 
 
