@@ -231,7 +231,7 @@ https://github.com/kirltrz/PAW3395_Arduino_ESP32
 ---
 
 ## ❤️ 捐赠
-如果您觉得 CyMouse 对您有帮助，欢迎给予我一些支持，这将帮助我更好地完善这个项目。
+如果您觉得 CyMouse 对您有帮助，请给予我一些支持，这将帮助我更好地完善这个项目。
 
   <img src="assets/wx21.png" width=150/>
 
