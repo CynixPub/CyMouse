@@ -87,7 +87,7 @@ In USB mode, the PC client can:
 ## 🛠️ Hardware Customization and Assembly
 
 Hardware resources are open source. You can find them here:  
-- **Open-source repository**: https://oshwhub.com/keivenliao/cymouse
+- **Open-source repository**: https://oshwlab.com/keivenliao/cymouse
 
 ### Procurement Notes
 
