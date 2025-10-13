@@ -1,4 +1,5 @@
-[中文版本 🇨🇳](./README.md)
+[中文版本 🇨🇳](./readme.md)
+
 
 
 # CyMouse: A High-Performance Mouse with Health Monitoring
