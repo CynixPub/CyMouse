@@ -203,4 +203,4 @@ Hardware development isn’t easy — I’ve gone through countless trials, espe
 
 If CyMouse has been helpful to you, consider supporting me — it helps improve and maintain this project.
 
-  <img src="assets/wx21.png" width=150>
+  <img src="assets/usdt.png" width=50> TFexGjjxHDo7EsU6x8Yiz7Eu2kqVYpnEw1
