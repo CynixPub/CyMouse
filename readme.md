@@ -1,3 +1,6 @@
+[English Version 🇺🇸](./README_en.md)
+
+
 # CyMouse: 一款支持健康监测的高性能鼠标
 
 <img src="./assets/view2.png" width="1000" alt="CyMouse 效果图">
