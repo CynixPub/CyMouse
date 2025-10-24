@@ -95,7 +95,7 @@ Most components are available on LCSC. If out of stock, you may source alternati
 
 - **Sensor**: PAW3395DM-T6QU (with lens model `LM19-LSI`)  
 - **SpO₂ Module**: Custom module supporting blood pressure monitoring; includes 6-pin cable and 3D model matched to its dimensions  
-- **Display**: 0.49" OLED, `64×48` resolution, `16PIN` interface (ensure connector matches reference image)  
+- **Display**: 0.66" OLED, `64×48` resolution, `16PIN` interface (ensure connector matches reference image)  
   <img src="assets/OLED.jpg" width=250> <img src="assets/OLED_PIN.png" width=250>  
 - **Battery**: `103443-1500mAh` (10×34×43 mm), ~48 hrs continuous use; optional if using USB mode only  
 - **Battery Cable**: `2P 1.25mm` male, 50mm length  
