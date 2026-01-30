@@ -20,7 +20,7 @@ $esptool = ".\esptool.exe"
 # ==========================================
 
 Write-Host "==================================================" -ForegroundColor Cyan
-Write-Host "         CyMouse 设备固件维护工具 v1.1" -ForegroundColor Cyan
+Write-Host "         CyMouse 固件维护工具 v1.1" -ForegroundColor Cyan
 Write-Host "==================================================" -ForegroundColor Cyan
 
 # 1. 扫描并选择串口（通常一次运行只针对一个端口，所以放在循环外）
