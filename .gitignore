@@ -6,3 +6,5 @@ bambu/3D打印_3mf(bambu).7z
 firmware/本体固件.7z
 firmware/接收端固件.7z
 firmware/note.txt
+firmware/Main/backup_littlefs.bin
+firmware/Main/backup_nvs.bin
