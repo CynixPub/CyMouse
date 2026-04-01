@@ -21,12 +21,12 @@ declare -A ADDR=(
 RED='\033[0.31m'
 GREEN='\033[0.32m'
 YELLOW='\033[0.33m'
-NC='\033[0m' 
+NC='\033[0m'
 
 # 1. 环境检查
 check_env() {
     echo -e "${YELLOW}[环境检查]${NC}"
-    
+
     # 检查 esptool 命令是否可用
     if command -v esptool &> /dev/null; then
         ESP_CMD="esptool"
@@ -35,7 +35,7 @@ check_env() {
     else
         echo -e "${YELLOW}未检测到 esptool，尝试通过 apt 自动安装...${NC}"
         sudo apt update && sudo apt install -y esptool
-        
+
         if [ $? -eq 0 ]; then
             ESP_CMD="esptool"
         else
@@ -47,7 +47,7 @@ check_env() {
             ESP_CMD="python3 -m esptool"
         fi
     fi
-    
+
     # 最终确认
     if ! $ESP_CMD version &> /dev/null; then
         echo -e "${RED}错误: 无法启动 esptool。请手动执行 sudo apt install esptool${NC}"
@@ -61,7 +61,7 @@ select_port() {
     echo -e "\n${YELLOW}[1] 扫描串口设备:${NC}"
     # 扫描 USB 转串口和 S3 原生 USB
     ports=($(ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null))
-    
+
     if [ ${#ports[@]} -eq 0 ]; then
         echo -e "${RED}错误: 未发现串口设备！${NC}"
         echo -e "提示: 1. 确保设备已连接"
@@ -86,9 +86,9 @@ select_mode() {
     echo " 2. COM 模式 (针对外部 CH340, 使用 default_reset)"
     read -p "请输入选择 [默认 1]: " m_choice
     m_choice=${m_choice:-1}
-    
-    BEFORE="usb_reset"
-    [ "$m_choice" == "2" ] && BEFORE="default_reset"
+
+    BEFORE="usb-reset"
+    [ "$m_choice" == "2" ] && BEFORE="default-reset"
 }
 
 # 执行初始化
@@ -125,14 +125,14 @@ while true; do
     }
 
     case $func in
-        1) $ESP_CMD $BASE_ARGS read_flash ${ADDR[nvs]} ${ADDR[nvs_size]} ${FILES[nvs]} ;;
-        2) $ESP_CMD $BASE_ARGS read_flash ${ADDR[littlefs]} ${ADDR[littlefs_size]} ${FILES[littlefs]} ;;
-        3) check_file ${FILES[nvs]} && $ESP_CMD $BASE_ARGS write_flash ${ADDR[nvs]} ${FILES[nvs]} ;;
-        4) check_file ${FILES[littlefs]} && $ESP_CMD $BASE_ARGS write_flash ${ADDR[littlefs]} ${FILES[littlefs]} ;;
-        5) check_file ${FILES[full]} && $ESP_CMD $BASE_ARGS --after hard_reset write_flash 0x0 ${FILES[full]} ;;
-        6) check_file ${FILES[update]} && $ESP_CMD $BASE_ARGS --after hard_reset write_flash ${ADDR[app]} ${FILES[update]} ;;
+        1) $ESP_CMD $BASE_ARGS read-flash ${ADDR[nvs]} ${ADDR[nvs_size]} ${FILES[nvs]} ;;
+        2) $ESP_CMD $BASE_ARGS read-flash ${ADDR[littlefs]} ${ADDR[littlefs_size]} ${FILES[littlefs]} ;;
+        3) check_file ${FILES[nvs]} && $ESP_CMD $BASE_ARGS write-flash ${ADDR[nvs]} ${FILES[nvs]} ;;
+        4) check_file ${FILES[littlefs]} && $ESP_CMD $BASE_ARGS write-flash ${ADDR[littlefs]} ${FILES[littlefs]} ;;
+        5) check_file ${FILES[full]} && $ESP_CMD $BASE_ARGS --after hard-reset write-flash 0x0 ${FILES[full]} ;;
+        6) check_file ${FILES[update]} && $ESP_CMD $BASE_ARGS --after hard-reset write-flash ${ADDR[app]} ${FILES[update]} ;;
         7) read -p "确定要全片擦除吗？(y/n): " conf
-           if [ "$conf" == "y" ]; then $ESP_CMD $BASE_ARGS erase_flash; fi ;;
+           if [ "$conf" == "y" ]; then $ESP_CMD $BASE_ARGS erase-flash; fi ;;
         0) exit 0 ;;
         *) echo -e "${RED}无效选择${NC}" ;;
     esac

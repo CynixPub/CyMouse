@@ -17,7 +17,7 @@ NC='\033[0m' # No Color
 # 1. 环境检查 (自动识别 esptool)
 check_env() {
     echo -e "${YELLOW}[环境检查]${NC}"
-    
+
     # 优先检查系统命令
     if command -v esptool &> /dev/null; then
         ESP_CMD="esptool"
@@ -34,7 +34,7 @@ check_env() {
             exit 1
         fi
     fi
-    
+
     echo -e "${GREEN}环境就绪: 使用 $ESP_CMD${NC}"
 }
 
@@ -42,7 +42,7 @@ check_env() {
 select_port() {
     echo -e "\n${YELLOW}[1] 扫描串口设备:${NC}"
     ports=($(ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null))
-    
+
     if [ ${#ports[@]} -eq 0 ]; then
         echo -e "${RED}错误: 未发现串口设备！请检查连接或权限。${NC}"
         echo -e "权限提示: sudo usermod -a -G dialout \$USER"
@@ -72,8 +72,8 @@ select_mode() {
     read -p "请输入选择 [默认 1]: " m_choice
     m_choice=${m_choice:-1}
     
-    BEFORE="usb_reset"
-    [ "$m_choice" == "2" ] && BEFORE="default_reset"
+    BEFORE="usb-reset"
+    [ "$m_choice" == "2" ] && BEFORE="default-reset"
 }
 
 # 辅助函数：检查文件是否存在
@@ -108,12 +108,12 @@ while true; do
     case $func in
         1) 
             check_file ${FILES[full]} && \
-            $ESP_CMD $BASE_ARGS --after hard_reset write_flash 0x0 ${FILES[full]} 
+            $ESP_CMD $BASE_ARGS --after hard-reset write-flash 0x0 ${FILES[full]} 
             ;;
         2) 
             read -p "确定要全片擦除吗？这会清空所有数据 (y/n): " conf
             if [ "$conf" == "y" ]; then 
-                $ESP_CMD $BASE_ARGS erase_flash
+                $ESP_CMD $BASE_ARGS erase-flash
             fi 
             ;;
         0) 
